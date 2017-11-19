@@ -201,7 +201,7 @@
                   <div class="row m-t-lg m-b-lg">
                   <div class="col-sm-6">
                       <div class="wrapper-md r" style="background-color:#0078bb; color:white!important">
-                        <a href="https://bitbucket.org/Sbenalla/cinephiledar">
+                        <a href="https://drive.google.com/open?id=16dQgm-MM95vE9oLlpsQt5F8iWNZf7Ow5">
                           <span class="h4 m-b-xs block" style="color:white"><i class="icon-cloud-download i-lg">  </i> Rapport</span>
                           <span class="text-muted" style="color:#ddd" >Télécharger le rapport et le manuel d'utilisation</span>
                         </a>
@@ -209,7 +209,7 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="wrapper-md r" style="background-color:#2b3137; color:white!important">
-                        <a href="https://bitbucket.org/Sbenalla/cinephiledar">
+                        <a href="https://github.com/Sbnll/CinephileDAR">
                           <span class="h4 m-b-xs block" style="color:white"><i class="fa fa-github i-lg">  </i> Code source</span>
                           <span class="text-muted" style="color:#ddd" >Voir le code source sur Github.</span>
                         </a>

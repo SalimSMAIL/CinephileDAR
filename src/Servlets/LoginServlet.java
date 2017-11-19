@@ -58,7 +58,7 @@ public class LoginServlet extends HttpServlet {
 			String password = request.getParameter("password");
 
 			if (map.containsKey("email") && !email.equals("") && map.containsKey("password") && !password.equals("")) {
-				JSONObject cinephile_json = login_service.LoginCinephile(email, password);
+				JSONObject cinephile_json = login_service.LoginCinephile(email.toLowerCase(), password);
 				String me = cinephile_json.get("message").toString();
 				if (!me.equals("Invalid password") && !me.equals("Invalid email")) {
 					session.setAttribute("id_cinephile", cinephile_json.get("id_user"));

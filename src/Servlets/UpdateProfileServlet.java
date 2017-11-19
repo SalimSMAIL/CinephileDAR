@@ -52,7 +52,7 @@ public class UpdateProfileServlet extends HttpServlet {
 
 			int id_cinephile = Integer.valueOf(session.getAttribute("id_cinephile").toString());
 			JSONObject jo = update_profile_service.updateUser(id_cinephile, req.getParameter("firstname"),
-					req.getParameter("lastname"), req.getParameter("address"), req.getParameter("email"),
+					req.getParameter("lastname"), req.getParameter("address"), req.getParameter("email").toLowerCase(),
 					req.getParameter("password"), req.getParameter("description"), req.getParameter("gender"),
 					req.getParameter("username"));
 

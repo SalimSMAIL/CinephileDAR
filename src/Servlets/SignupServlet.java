@@ -61,7 +61,7 @@ public class SignupServlet extends HttpServlet {
 					&& map.containsKey("gender") && !gender.equals("") && map.containsKey("description")
 					&& !description.equals("") && map.containsKey("address") && !address.equals("")) {
 				session.setAttribute("username", username);
-				JSONObject cinephile_json = this.inscription_service.CreateCinephile(username, email, firstname,
+				JSONObject cinephile_json = this.inscription_service.CreateCinephile(username, email.toLowerCase(), firstname,
 						lastname, gender, address, description, password);
 
 				resp.getWriter().print(cinephile_json);
