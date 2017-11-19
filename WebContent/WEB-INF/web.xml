@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>CinephileDAR</display-name>
+  <welcome-file-list>
+    <welcome-file>Signup.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <!-- Filters -->
+    <filter>
+        <filter-name>AuthorizationFilter</filter-name>
+        <filter-class>Filters.AuthorizationFilter</filter-class>
+    </filter>
+  
+ 	<filter-mapping>
+        <filter-name>AuthorizationFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+  
+  <servlet>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>Servlets.SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeCinephileProfileServlet</servlet-name>
+    <servlet-class>Servlets.SeeCinephileProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeeCinephileProfileServlet</servlet-name>
+    <url-pattern>/seeProfile</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeMostPopularMoviesServlet</servlet-name>
+    <servlet-class>Servlets.SeeMostPopularMoviesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeeMostPopularMoviesServlet</servlet-name>
+    <url-pattern>/SeeMostPopularMovies</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeTopRatedMoviesServlet</servlet-name>
+    <servlet-class>Servlets.SeeTopRatedMoviesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeeTopRatedMoviesServlet</servlet-name>
+    <url-pattern>/SeeTopRatedMovies</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeMoviesByGenreServlet</servlet-name>
+    <servlet-class>Servlets.SeeMoviesByGenreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeeMoviesByGenreServlet</servlet-name>
+    <url-pattern>/SeeMoviesByGenre</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SearchCinephileServlet</servlet-name>
+    <servlet-class>Servlets.SearchCinephileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchCinephileServlet</servlet-name>
+    <url-pattern>/SearchCinephile</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+    <servlet-name>SeeMostPopularTvShowsServlet</servlet-name>
+    <servlet-class>Servlets.SeeMostPopularTvShowsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeeMostPopularTvShowsServlet</servlet-name>
+    <url-pattern>/SeeMostPopularTvShows</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>DisplayMovieDetailsServlet</servlet-name>
+    <servlet-class>Servlets.DisplayMovieDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayMovieDetailsServlet</servlet-name>
+    <url-pattern>/DisplayMovieDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>DisplayTvShowDetailsServlet</servlet-name>
+    <servlet-class>Servlets.DisplayTvShowDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayTvShowDetailsServlet</servlet-name>
+    <url-pattern>/DisplayTvShowDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>DisplayPersonDetailsServlet</servlet-name>
+    <servlet-class>Servlets.DisplayPersonDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayPersonDetailsServlet</servlet-name>
+    <url-pattern>/DisplayPersonDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ConsultOtherCinephileServlet</servlet-name>
+    <servlet-class>Servlets.ConsultOtherCinephileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConsultOtherCinephileServlet</servlet-name>
+    <url-pattern>/ConsultOtherCinephile</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>AddMessageServlet</servlet-name>
+    <servlet-class>Servlets.AddMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddMessageServlet</servlet-name>
+    <url-pattern>/AddMessage</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>DisplayMessagesBetweenTwoCinephilesServlet</servlet-name>
+    <servlet-class>Servlets.DisplayMessagesBetweenTwoCinephilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayMessagesBetweenTwoCinephilesServlet</servlet-name>
+    <url-pattern>/DisplayMessagesBetweenTwoCinephiles</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>MultipleSearchServlet</servlet-name>
+    <servlet-class>Servlets.MultipleSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MultipleSearchServlet</servlet-name>
+    <url-pattern>/MultipleSearch</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>AddCommentServlet</servlet-name>
+    <servlet-class>Servlets.AddCommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCommentServlet</servlet-name>
+    <url-pattern>/AddComment</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>Servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>Servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+    
+  
+   <servlet>
+    <servlet-name>DisplayElementCommentsServlet</servlet-name>
+    <servlet-class>Servlets.DisplayElementCommentsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayElementCommentsServlet</servlet-name>
+    <url-pattern>/DisplayElementComments</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>GetIleDeFranceCinemasServlet</servlet-name>
+    <servlet-class>Servlets.GetIleDeFranceCinemasServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetIleDeFranceCinemasServlet</servlet-name>
+    <url-pattern>/GetIleDeFranceCinemas</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddEventServlet</servlet-name>
+    <servlet-class>Servlets.AddEventServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddEventServlet</servlet-name>
+    <url-pattern>/AddEvent</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeEventsServlet</servlet-name>
+    <servlet-class>Servlets.SeeEventsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeeEventsServlet</servlet-name>
+    <url-pattern>/SeeEvents</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ConsultMessagesServlet</servlet-name>
+    <servlet-class>Servlets.ConsultMessagesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConsultMessagesServlet</servlet-name>
+    <url-pattern>/ConsultMessages</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeSeancesMoviesServlet</servlet-name>
+    <servlet-class>Servlets.SeeSeancesMoviesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeeSeancesMoviesServlet</servlet-name>
+    <url-pattern>/SeeSeancesMovies</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeEventsCinephileServlet</servlet-name>
+    <servlet-class>Servlets.SeeEventsCinephileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SeeEventsCinephileServlet</servlet-name>
+    <url-pattern>/SeeEventsCinephile</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>UpdateProfileServlet</servlet-name>
+    <servlet-class>Servlets.UpdateProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateProfileServlet</servlet-name>
+    <url-pattern>/UpdateProfile</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ParticipateEventServlet</servlet-name>
+    <servlet-class>Servlets.ParticipateEventServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ParticipateEventServlet</servlet-name>
+    <url-pattern>/ParticipateEvent</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>AddListServlet</servlet-name>
+    <servlet-class>Servlets.AddListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddListServlet</servlet-name>
+    <url-pattern>/AddList</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeCinephileListsServlet</servlet-name>
+    <servlet-class>Servlets.SeeCinephileListsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SeeCinephileListsServlet</servlet-name>
+    <url-pattern>/SeeCinephileLists</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>AddElementToListServlet</servlet-name>
+    <servlet-class>Servlets.AddElementToListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddElementToListServlet</servlet-name>
+    <url-pattern>/AddElementToList</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SeeElementsListServlet</servlet-name>
+    <servlet-class>Servlets.SeeElementsListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SeeElementsListServlet</servlet-name>
+    <url-pattern>/SeeElementsList</url-pattern>
+  </servlet-mapping>
+  
+  
+  <listener>
+    <listener-class>
+      Jobs.UpdateDatabaseServlet
+    </listener-class>
+  </listener>
+  
+  
+    
+</web-app>
