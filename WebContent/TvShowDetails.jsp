@@ -268,7 +268,7 @@
               <h4 class="m-t-lg m-b" id="comments_total"></h4>
                   <section class="comment-list block" id="tvshow_comments" >
                   </section>
-                  <h4 class="m-t-lg m-b">Laisser une commentaire : </h4>
+                  <h4 class="m-t-lg m-b">Laisser un commentaire : </h4>
                   <form>
                     <div class="form-group">
                       <label>Commentaire</label>
